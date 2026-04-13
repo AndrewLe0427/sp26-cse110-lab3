@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team 2 First Brainstorm</title>
+    <link rel="icon" href="bird.png" />
+  </head>
+  <body>
+    <header>
+        <h1>Brainstorming</h1>
+        <h3>8/4/2026</h3> 
+        <nav>
+            <ul>
+                <li><a href="#Attendance"> Attendance</a></li>
+                <li><a href="#Music"> Music</a></li>
+                <li><a href="#Video"> Video</a></li>
+                <li><a href="#Mood-check"> Mood Check</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div></div>
+        <span></span>
+        <section id="Attendance">
+            <h2>Attendance</h2>
+            <p>Students present today:</p>
+            <ol>
+                <li>Alice</li>
+                <li>Bob</li>
+                <li>Charlie</li>
+            </ol>
+        </section>
+        <section id="Music">
+            <h2>Music</h2>
+            <p>We listened to some music to get inspired.</p>
+            <audio src="Birds - Corbyn Kites.mp3" controls>
+            </audio>
+        </section>
+        <section id="Video">
+            <h2>Video</h2>
+            <p>We watched somethingto get inspired.</p>
+            <video width="640" height="360" controls poster="Among Us.png">
+            <source src="Bird Vid.mp4" type="video/mp4">
+            </video>
+        </section>
+        <section id="Mood-check">
+            <h2>Mood Check</h2>
+            <input list="mood-list" type="text" id="mood-choose" name="mood">
+            <datalist id = 'mood-list'>
+                <option value="Happy">
+                <option value="Normal">
+                <option value="Sad">
+            </datalist>
+        </section>
+        
+        <details>
+         <summary>Note information</summary>
+            <p>
+            <strong>This is our first meeting. We have a few ideas to discuss for our project.</strong>
+            <br /><b>Hopefully this project works well.</b>
+            <br /><i>We will need to meet regularly.</i>
+            <br />
+            <em>This is mandatory for a good result.</em>
+
+        </p>
+        </details>
+        <fieldset>
+            <legend>Feedback</legend>
+            <textarea placeholder="Let me know your thoughts here!"></textarea>
+        </fieldset>
+        <select id="Day-to-meet-select">
+            <option value="default">N/A</option>
+            <option value="friday">Friday</option>
+            <option value="saturday">Saturday</option>
+            <option value="sunday">Sunday</option>
+        </select>
+    </main>
+    <hr />
+    <footer>
+        <form>
+            <input type="text" placeholder="Enter your name please" />
+            <button> Submit</button>
+        </form><br>
+        <input type="radio" id="check1" name="check1" value="yes">
+        <label for="check1"> I agree to our contract.</label><br><br>
+
+        <label for="sign-date">Sign Date:</label>
+        <input type="date" id="sign-date" name="sign-date"><br><br>
+
+        <input type="checkbox" id="check" name="check" value="yes">
+        <label for="check"> I think the meeting was useful.</label><br>
+
+        <img src="gl.jpg" alt = "End Image"/>
+    </footer>
+  </body>
+</html>
+
