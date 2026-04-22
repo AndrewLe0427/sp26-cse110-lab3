@@ -1,5 +1,5 @@
 ---
-name: Lab 3 FeatureRequests
+name: Lab 3 Feature Requests
 about: Add a feature to satisfy each requirement in Lab 3
 title: "[FEATURES]"
 labels: enhancement
