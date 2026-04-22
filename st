@@ -1,0 +1,254 @@
+/* Apply Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root /* root with fallback */
+{
+    --main-color: navy; /* main color */
+    --font-size: 16px; /* font */
+    -- accent-color: blue
+}
+
+* 
+{ /* Uinversal */
+    box-sizing: border-box;
+    margin: 0; /* margin */
+    padding: 0;
+}
+
+header 
+{
+    background-color: color-mix(in srgb, navy 60%, white 40%); /*backgrround used color mix */
+    color: white;
+}
+
+
+
+body 
+{
+    font-family: 'Roboto', sans-serif; /* font */
+    background-color: lightgray; /* bacgrround */
+    font-size: var(--font-size, 16px); /* size of font */
+}
+
+h1 
+{
+    color: #2c3e50 /* hex color */
+    font-size: 2em;
+    text-align: center;
+    text-decoration: underline; /* align text, size, and decoration */
+}
+
+h2
+{
+    font-size: 1.5em;
+    color: hsl(210, 50%, 30%); /* hsl color */
+}
+
+p
+{
+    color: rgb(50, 50, 50); /* rgb color */
+    line-height: 1.6;
+}
+
+footer 
+{
+    border-top: 3px solid color(srgb 0.1 0.2 0.8); /* used color() for the footer */
+}
+
+nav
+{
+    width: 100%;            /* Use % */
+    min-width: 30vw;        /* Use vw */
+    font-size: 12pt;        /* Use pt */
+    padding: 0.5cm;         /* Use cm */
+    border-bottom: 2px solid white; /* Use px */
+}
+
+header /* margin for header */
+{
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+
+section 
+{
+    margin: 10px 15px 10px 15px; /*margin modification */
+}
+ 
+main 
+{
+    margin: auto; /* centers it */
+}
+ 
+header 
+{ /* a couple longhand paddings */
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+ 
+section 
+{ /* shorthand padding */
+    padding: 20px 25px 20px 25px;
+}
+ 
+section 
+{ /* padding the border (longhand) */
+    border-style: solid;
+    border-color: var(--main-color, black);
+    border-width: 2px;
+    border-radius: 8px;
+}
+ 
+footer 
+{ /* shorthand is for footer */
+    border: 2px solid color(srgb 0.1 0.2 0.8);
+} 
+
+a 
+{ /* some text properties */
+    color: var(--accent-color, orange);
+    text-decoration: none;
+    text-align: left;
+}
+ 
+nav ul 
+{ /* flexbox */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+ 
+main 
+{ /* modify the grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    max-width: 1200px;  /* sizing */
+    min-width: 300px;   /* sizing */
+    width: 90%;         /* sizing */
+}
+ 
+nav a:hover 
+{ /* :hover */
+    color: white;
+    text-decoration: underline;
+}
+ 
+button:active 
+{ * :active */
+    background-color: darkblue;
+    color: white;
+}
+ 
+header 
+{ /* This allows header to stick to the top */
+    position: sticky;
+    top: 0;
+}
+ 
+footer 
+{ /* Change position attribute for the footer */
+    position: relative;
+    top: 10px;
+    padding: 20px 30px 20px 30px;
+}
+ 
+section 
+{ /* Usage of block */
+    display: block;
+}
+ 
+nav li 
+{ /* Usage of inline block */
+    display: inline-block;
+}
+ 
+@media (max-width: 768px) 
+{
+    main 
+    {
+        grid-template-columns: 1fr; /* Vertical stack */
+    }
+ 
+    nav ul 
+    {
+        flex-direction: column;     /* Also stacks vertically */
+    }
+ 
+    h1 
+    {
+        font-size: 1.5em;
+    }
+}
+ 
+.highlight 
+{
+    background-color: yellow; /* Works as a highlight */
+}
+ 
+#Attendance 
+{
+    border-left: 4px solid navy; /* Made change to object with ID Attendance */
+}
+ 
+input[type="text"] 
+{ /* Made change to input type text */
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 4px;
+}
+ 
+h1, h2, h3 
+{
+    font-family: 'Roboto', sans-serif;
+}
+ 
+main p 
+{ /* Usage of Descendant Combinator */
+    color: rgb(50, 50, 50);
+}
+ 
+ul > li 
+{ /* Usage of child combinator */
+    list-style: none;
+}
+ 
+h2 ~ p 
+{ /* Usage of general sibling combinator */
+    margin-top: 5px;
+}
+
+h2 + p 
+{ /* Usage of adjacent sibling combinator */
+    font-weight: bold;
+}
+ 
+
+section#Attendance 
+{
+    padding: 10px; /* example of combining two selectors */
+}
+ 
+section:has(audio)
+{ /* showcase of :has() */
+    background-color: color-mix(in srgb, lightblue 40%, white 60%);
+}
+ 
+nav 
+{ /* nested selectors */
+    background-color: var(--main-color, navy);
+    ul 
+    {
+        display: flex;
+        gap: 10px;
+    }
+}
