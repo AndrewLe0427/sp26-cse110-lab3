@@ -5,7 +5,7 @@
 {
     --main-color: navy; /* main color */
     --font-size: 16px; /* font */
-    -- accent-color: blue
+    --accent-color: blue;
 }
 
 * 
@@ -32,7 +32,7 @@ body
 
 h1 
 {
-    color: #2c3e50 /* hex color */
+    color: #2c3e50; /* hex color */
     font-size: 2em;
     text-align: center;
     text-decoration: underline; /* align text, size, and decoration */
@@ -144,7 +144,7 @@ nav a:hover
 }
  
 button:active 
-{ * :active */
+{ /* :active usage */
     background-color: darkblue;
     color: white;
 }
@@ -209,7 +209,7 @@ input[type="text"]
  
 h1, h2, h3 
 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
  
 main p 
