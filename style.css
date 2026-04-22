@@ -25,7 +25,7 @@ header
 
 body 
 {
-    font-family: 'Roboto', sans-serif; /* font */
+    font-family: 'Open Sans', sans-serif; /* font */
     background-color: lightgray; /* bacgrround */
     font-size: var(--font-size, 16px); /* size of font */
 }
@@ -53,6 +53,7 @@ p
 footer 
 {
     border-top: 3px solid color(srgb 0.1 0.2 0.8); /* used color() for the footer */
+    color: white;
 }
 
 nav
