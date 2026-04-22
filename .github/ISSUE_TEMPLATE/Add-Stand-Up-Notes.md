@@ -1,6 +1,6 @@
----
-*Name*: Add Standup Meeting md File
+name: Add Standup Meeting md File
+about: Add standup.md file to represent stand up meeting notes
+title: "[FEATURES]"
+labels: enhancement
+assignees: AndrewLe0427
 
-*Description*: Add standup.md file to represent stand up meeting notes
-
-*Due Date*: 4/21/26 11:59pm
